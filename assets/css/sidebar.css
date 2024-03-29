@@ -1,0 +1,32 @@
+/* SIDEBAR */
+.sidebar {
+  flex-basis: 50rem;
+  background-color: var(--color-dark--1);
+  padding: 3rem 5rem 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  height: 5.2rem;
+  align-self: center;
+  margin-bottom: 4rem;
+}
+
+.copyright {
+  margin-top: auto;
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--color-light--1);
+}
+
+.linkedin-link:link,
+.linkedin-link:visited {
+  color: var(--color-light--1);
+  transition: all 0.2s;
+}
+
+.linkedin-link:hover,
+.linkedin-link:active {
+  color: var(--color-light--2);
+}
