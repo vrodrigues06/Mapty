@@ -36,9 +36,6 @@ export default class App {
 
     this.#workouts.forEach(workout => {
       this._renderWorkout(workout);
-      setTimeout(() => {
-        this._renderWorkoutMarker(workout);
-      }, 500);
     });
 
     workoutContainers.addEventListener('click', this._moveOnClick.bind(this));
@@ -72,6 +69,9 @@ export default class App {
       subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
     }).addTo(this.#map);
 
+    this.#workouts.forEach(workout => {
+      this._renderWorkoutMarker(workout);
+    });
     this.#map.on('click', this._showForm.bind(this));
   }
 
